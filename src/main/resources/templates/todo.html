@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>name: <span th:text="${todoOne.getName()}"></span> </p>
+<p>description: <span th:text="${todoOne.getDescription()}"></span> </p>
+<p>fini :
+    <span th:if="${todoOne.isDone()}">fini</span>
+    <span th:unless="${todoOne.isDone()}">pas fini</span>
+</p>
+<button><a href="/json">json</a> </button>
+</body>
+</html>
